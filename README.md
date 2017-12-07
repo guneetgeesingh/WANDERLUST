@@ -1,4 +1,5 @@
-<p align="center">#h1  WanderLust</p>
+<p align="center"># WanderLust</p>
+
 ---
 
 (c) (tm)
