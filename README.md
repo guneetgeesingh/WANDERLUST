@@ -1,7 +1,3 @@
-<p align="center"># WanderLust</p>
+![WanderLust](https://github.com/guneetgeesingh/WANDERLUST/blob/master/images/Untitled.png)
 
 ---
-
-(c) (tm)
-
-**this is bold text**
