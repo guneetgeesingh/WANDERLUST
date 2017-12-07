@@ -8,6 +8,6 @@ This project is a web app designed to grab a location from the user, and map the
 
 ### These Tecnologies Were Used:
 ---
-![logos](./images/logos.png)
+![logos](./images/logoss.png)
 
 
