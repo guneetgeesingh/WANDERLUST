@@ -1,8 +1,5 @@
-# h1 heading
-## h2 heading
-
+<center># WanderLust</center>
 ---
-Horizontal Line
 
 (c) (tm)
 
