@@ -1,0 +1,23 @@
+<div class="container">
+  <h1 class = "text-center" > Places You've Been!</h1>
+
+<table class="table table-hover">
+  <tr>
+    <th>Name:</th>
+    <th>Address:</th>
+    <th>Date:</th>
+    <th>Reason:</th>
+    
+  </tr>
+  <!-- // showView will take it to the individual location -->
+  <tr ng-repeat="loc in newLocDetails" ui-sref="show({id: loc.id})">
+    <td>{{loc.lName}}</td>
+    <td>{{loc.asyncSelected}}</td>
+    <td>{{loc.date}}</td>
+    <td>{{loc.why}}</td>
+    
+  </tr>
+
+</table>
+<button type="button" class="btn btn-danger btn-lg pull-right" ui-sref="search">BACK!</button>
+</div>

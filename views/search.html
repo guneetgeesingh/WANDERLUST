@@ -1,0 +1,53 @@
+<div class="container">
+  <h1>Hello {{userNow.firstName}} {{userNow.lastName}}, please add your location!</h1>
+  <!-- <div class="container">
+    <input type="text" class="form-control" placeholder="search for an artist.." />
+  </div> -->
+  <!-- //  -->
+  <!-- //bootstrap ui code for asynchronous autocomplete search bar -->
+
+  <h4>Search for any location in the world!</h4>
+  <input type="text" ng-model="loc.asyncSelected" placeholder="Locations loaded via $http" uib-typeahead="address for address in getLocation($viewValue)"
+    typeahead-loading="loadingLocations" typeahead-no-results="noResults" class="form-control">
+  <i ng-show="loadingLocations" class="glyphicon glyphicon-refresh"></i>
+  <div ng-show="noResults">
+    <i class="glyphicon glyphicon-remove"></i> No Results Found
+  </div>
+  <p></p>
+  <div class="row">
+    <div class="form-group col-md-4">
+      <label>Name the place!</label>
+      <input type="text" class="form-control" placeholder="Name of Location" ng-model="loc.lName">
+    </div>
+    <div class="form-group col-md-4">
+      <label>Date you went!</label>
+      <input type="text" class="form-control" placeholder="Date" ng-model="loc.date">
+    </div>
+    <div class="form-group col-md-4">
+      <label>Why'd you go?!</label>
+      <input type="Text" class="form-control" placeholder="Why" ng-model="loc.why">
+    </div>
+  </div>
+  <button type="button" class="btn btn-info btn-lg pull-right" ng-click="showAll()">SHOW ALL!</button>
+  <button type="button" class="btn btn-success btn-lg pull-right" ng-click="addLocation()">ADD!</button>
+  <button type="button" class="btn btn-primary btn-lg pull right" ng-click="saveItem()">SAVE!</button> 
+  <!-- table for ng-repeat -->
+  <p></p>
+  <div>
+    <table class="table table-hover">
+      <tr>
+        <th>Name:</th>
+        <th>Address:</th>
+        <th>Date:</th>
+        <th>Reason:</th>
+
+        <tr ng-repeat="loc in locData" ng-click="showView()">
+          <td>{{loc.lName}}</td>
+          <td>{{loc.asyncSelected}}</td>
+          <td>{{loc.date}}</td>
+          <td>{{loc.why}}</td>
+
+        </tr>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:rgb(189, 182, 182);
+}
+#map {
+  height: 400px;
+  width: 100%;
+  border: 3px groove solid red;
+ }
+body{
+  background-image: url("https://farm8.staticflickr.com/7413/16351696690_35eef77d1f_o.jpg");
+  height: 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
