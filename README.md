@@ -12,6 +12,6 @@ This project is a web app designed to grab a location from the user, and map the
 | Parameters        | Value           | Description  |
 | ----------------- |:---------------:| ------------:|
 | Name              | String          | User's Name  |
-| Lat & Lng         | String          | User's Loc   |
+| Latitude  & Longitude         | String          | Latty and Lnggy of the user from the Address  |
 | Address           | String          | Typed in to figure out the location |
 
