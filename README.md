@@ -1,4 +1,4 @@
-<center># WanderLust</center>
+<p align="center"># WanderLust</p>
 ---
 
 (c) (tm)
